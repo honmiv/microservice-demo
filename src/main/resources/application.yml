@@ -1,0 +1,20 @@
+clients:
+  males: >
+    1337
+  females: >
+    42,
+    69
+### config for kafka
+# spring.cloud.stream:
+#   function:
+#     definition: processKafkaRequest
+#     bindings:
+#       processKafkaRequest-in-0: request-binding
+#       processKafkaRequest-out-0: response-binding
+#   bindings:
+#     request-binding:
+#       destination: in-topic-name
+#     response-binding:
+#       destination: out-topic-name
+#     kafka.streams.binder:
+#       brokers: localhost:9092
