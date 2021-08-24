@@ -19,4 +19,9 @@ public class ResponseDto {
     public Sexes getSex() {
         return sex;
     }
+
+    @Override
+    public String toString() {
+        return "{ \"clientId\": \"" + clientId + "\", \"sex\": \"" + sex + "\" }";
+    }
 }
