@@ -11,4 +11,12 @@ public class ResponseDto {
         this.clientId = clientId;
         this.sex = sex;
     }
+
+    public String getClientId() {
+        return clientId;
+    }
+
+    public Sexes getSex() {
+        return sex;
+    }
 }
