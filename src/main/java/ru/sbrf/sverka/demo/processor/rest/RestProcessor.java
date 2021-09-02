@@ -21,7 +21,7 @@ public class RestProcessor {
     }
 
     @GetMapping(name = "Сервис определния пола клиента по его номеру", path = "/getClientSex")
-    public ResponseDto getClientSex(@RequestParam(name = "Номер клиента") String clientId) {
+    public ResponseDto getClientSex(@RequestParam String clientId) {
         log.info("Received rest request 'getClientSex' with clientId = {}", clientId);
         ResponseDto result = new ResponseDto(clientId, sexFinderService.getSex(clientId));
         log.info("Rest response = {}", result);
