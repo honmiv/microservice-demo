@@ -22,7 +22,7 @@ public class KafkaProcessor {
     }
 
     //uncomment @Bean with kafka configuration in application.yml to run with kafka
-    //@Bean
+    @Bean
     public Function<String, ResponseDto> processKafkaRequest() {
         return clientId -> {
             log.info("Received kafka request 'getClientSex' with clientId = {}", clientId);
